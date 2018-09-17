@@ -4,7 +4,10 @@ import IndexController from './controller/IndexController';
 KatrineApp.addController(new IndexController());
 
 const port = process.env.PORT || 2100;
-console.log('run your site at http://localhost:' + port);
+
+// set the public folder with CSS, JS, and other static resources
 KatrineApp.setPublicFolder('public');
+
+console.log('run your site at http://localhost:' + port);
 KatrineApp.run(port);
 
