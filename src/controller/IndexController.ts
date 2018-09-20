@@ -1,4 +1,4 @@
-import { action, Controller } from 'katrine';
+import { action, Controller, HTTPRequestType } from 'katrine';
 
 export default class IndexController extends Controller {
 
@@ -11,4 +11,8 @@ export default class IndexController extends Controller {
     return this.render('./view/actions/index.pug', {name: 'world'});
   }
 
+  @action('/post', HTTPRequestType.POST) // test only POST query
+  postAction(req): string {
+    return 'This is Post';
+  }
 }
