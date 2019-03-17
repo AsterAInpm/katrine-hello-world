@@ -1,5 +1,5 @@
 {
-  "name": "webportal",
+  "name": "kateine-helloworld",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^10.9.4",
-    "katrine": "^1.1.4",
-    "typescript": "^3.0.3"
+    "@types/node": "9.6.7",
+    "katrine": "^1.2.0",
+    "typescript": "^3.3.3"
   },
   "devDependencies": {
     "tsc-watch": "^1.0.27"
