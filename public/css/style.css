@@ -1,0 +1,48 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.height-340 {
+    max-height: 340px;
+    height: 340px;
+}
+
+.height-auto-important{
+    height: auto !important;
+}
+
+.width-440 {
+    max-width: 440px;
+    height: 440px;
+}
+
+.btn-login {
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .btn-login-register {
+        margin-bottom: 20px;
+    }
+}
+
+

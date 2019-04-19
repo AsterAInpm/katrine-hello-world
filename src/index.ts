@@ -1,21 +1,21 @@
 import { KatrineApp } from 'katrine';
 
-// register controller
-KatrineApp.loadControllers([
-  './controller/IndexController'
-]);
+/**
+ * Katrine requires directories by absolute path or relative path
+ * if dir path start with '.' (dot) Katrine will require relatively
+ * Else Katrine will require dirs by absolute path
+ *
+ * Any controllers must be annotated by @controller decorator
+ */
+const controllers = [
+  './controller/IndexController',
+  './controller/UserController',
+  './controller/AdminController',
+];
 
-// make a config
-const config = {
-  httpServer: {
-    port: 3500
-  }
-};
+KatrineApp.loadControllers(controllers);
 
-
-// set the public folder with CSS, JS, and other static resources
 KatrineApp.setPublicFolder('public');
+KatrineApp.run({});
 
-console.log('Find your site at http://localhost:' + config.httpServer.port);
-KatrineApp.run(config);
-
+console.log('visit http://localhost:3400/');

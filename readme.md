@@ -14,4 +14,4 @@
 
 ### Step 4. Type at browser address  
 
-    http://localhost:3500
+    http://localhost:3400

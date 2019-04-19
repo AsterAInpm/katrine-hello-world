@@ -1,0 +1,18 @@
+#modal__login-form-dialog.modal.width-440.height-auto-important
+  .modal-content
+    h4#loginmodal_headder Login to AsterAI
+    .row
+      form.col.s12
+        .row
+          .input-field.col.s12
+            input#loginmodal_email_field.validate(type='email', required, placeholder='admin@example.com')
+            label(for='loginmodal_email_field') Email
+            span.helper-text(data-error='Press valid email please.', data-success='Email is valid') Helper text
+        .row
+          .input-field.col.s12
+            input#loginmodal_password_field.validate(type='password' placeholder='admin')
+            label(for='loginmodal_password_field') Password
+
+        .row.right-align
+          .input-field.col.s12
+            a#loginmodal_login_btn.btn.btn-green.btn-login Login

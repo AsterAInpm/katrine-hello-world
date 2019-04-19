@@ -1,5 +1,6 @@
-import { action, KatrineController, HTTPRequestType } from 'katrine';
+import { action, KatrineController, controller } from 'katrine';
 
+@controller
 export default class IndexController extends KatrineController {
 
   getLayout() : string {
@@ -7,17 +8,17 @@ export default class IndexController extends KatrineController {
   }
 
   @action('/') // express compatible route
-  someIndexAction(req): string {
-    return this.render('./view/actions/index.pug', {name: 'world'});
+  homePageIndexAction(req): string {
+    return this.render('./view/actions/index.pug', {});
   }
 
-  @action('404') // express compatible route
+  @action('404')
   pageNotFound(req): string {
-    return this.render('./view/actions/404.pug', {});
+    return this.render('./view/system/404.pug',{});
   }
 
-  @action('/post', HTTPRequestType.POST) // test only POST query
-  postAction(req): string {
-    return 'This is Post';
+  @action('403')
+  accessDenied(req): string {
+    return this.render('./view/system/403.pug',{});
   }
 }
