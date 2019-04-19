@@ -1,8 +1,9 @@
 import { KatrineApp } from 'katrine';
-import IndexController from './controller/IndexController';
 
 // register controller
-KatrineApp.addController(new IndexController());
+KatrineApp.loadControllers([
+  './controller/IndexController'
+]);
 
 // make a config
 const config = {

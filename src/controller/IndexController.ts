@@ -1,6 +1,6 @@
-import { action, Controller, HTTPRequestType } from 'katrine';
+import { action, KatrineController, HTTPRequestType } from 'katrine';
 
-export default class IndexController extends Controller {
+export default class IndexController extends KatrineController {
 
   getLayout() : string {
     return './view/layout/main.pug';
